@@ -1,0 +1,85 @@
+body {
+    background-color: white;
+}
+
+nav {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: #005d14;
+    color: white;
+    height: 10%;
+    gap: 5%;
+}
+
+article {
+    text-align: center;
+    width: 15%;
+    display: block;
+    background-color: #005d14;
+    border-top: 5px solid #005d14;
+    border-bottom: 5px solid #005d14;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#gigadynelogo {
+    order: 1;
+    height: 128px;
+    object-fit: contain;
+}
+
+.navbar {
+    order: 2;
+    display: none;
+}
+
+fieldset {
+    order: 3;
+}
+
+nav a {
+    color: white;
+    padding: 5px;
+    font-size: 32pt;
+    text-decoration: none;
+}
+
+article a {
+    display: block;
+    color: white;
+    padding:5px;
+    font-size: 32pt;
+    text-decoration: none;
+}
+
+.collapsemenu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    order: 4;
+    background-color: #005d14;
+    color: white;
+    width: 10%;
+}
+
+.minimenu {
+    display: none;
+    background-color: #005d14;
+    color: white;
+    width: 100%;
+}
+.minimenu.open {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@media screen and (min-width:768px) {
+    .collapsemenu {
+        display: none;
+    }
+    .navbar {
+    display: flex;
+    }
+}
